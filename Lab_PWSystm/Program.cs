@@ -111,13 +111,21 @@ namespace Lab_PWSystm
             {
                 string userName = ValidUserName();
                 Console.WriteLine("Please type your password");
-                string input = Console.ReadLine();
+                string password = "";
+                while (true)
+                {
+                    //This uses the readkey function to obscure user input
+                    var key = System.Console.ReadKey(true);
+                    if (key.Key == ConsoleKey.Enter)
+                        break;
+                    password += key.KeyChar;
+                }
 
                 for (int i = 0; i < userList.Count; i++)
                 {
                     if (userName.ToLower() == userList[i].UserName.ToLower())
                     {
-                        correctPassword = userList[i].PassMatch(input);
+                        correctPassword = userList[i].PassMatch(password);
                         temp = userList[i];
                         if (correctPassword)
                         { return temp; }
@@ -146,7 +154,7 @@ namespace Lab_PWSystm
 
         private static string ValidPassword()
         {
-            string input;
+            string password = "";
 
             Console.WriteLine("Please enter a password.");
             Console.WriteLine("Your password must be at least 5 characters," +
@@ -161,9 +169,15 @@ namespace Lab_PWSystm
                 bool grtrFive = false; 
                 bool ichiban = false;
                 bool hasCapLetter = false;
+                while (true)
+                {
+                    var key = System.Console.ReadKey(true);
+                    if (key.Key == ConsoleKey.Enter)
+                        break;
+                    password += key.KeyChar;
+                }
 
-                input = Console.ReadLine();
-                char[] charList = input.ToCharArray();
+                char[] charList = password.ToCharArray();
                 try
                 {
                     if(charList.Length >= 5) { grtrFive = true; }
@@ -190,7 +204,7 @@ namespace Lab_PWSystm
                 if(grtrFive && ichiban && hasCapLetter)
                 {
                     Console.WriteLine("Password Accepted.");
-                    return input;
+                    return password;
                 }
 
                 if (!grtrFive) { Console.WriteLine("Your Password was not at least five characters long."); }
