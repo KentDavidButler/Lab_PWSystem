@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\GrandCircus\Lab_PWSystem\Lab_PWSystm\bin\Debug\Lab_PWSystm.exe.config
+C:\Users\Administrator\source\repos\GrandCircus\Lab_PWSystem\Lab_PWSystm\bin\Debug\Lab_PWSystm.exe
+C:\Users\Administrator\source\repos\GrandCircus\Lab_PWSystem\Lab_PWSystm\bin\Debug\Lab_PWSystm.pdb
+C:\Users\Administrator\source\repos\GrandCircus\Lab_PWSystem\Lab_PWSystm\obj\Debug\Lab_PWSystm.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\GrandCircus\Lab_PWSystem\Lab_PWSystm\obj\Debug\Lab_PWSystm.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\GrandCircus\Lab_PWSystem\Lab_PWSystm\obj\Debug\Lab_PWSystm.exe
+C:\Users\Administrator\source\repos\GrandCircus\Lab_PWSystem\Lab_PWSystm\obj\Debug\Lab_PWSystm.pdb
