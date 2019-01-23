@@ -115,7 +115,7 @@ namespace Lab_PWSystm
 
                 for (int i = 0; i < userList.Count; i++)
                 {
-                    if(userName == userList[i].UserName)
+                    if (userName.ToLower() == userList[i].UserName.ToLower())
                     {
                         correctPassword = userList[i].PassMatch(input);
                         temp = userList[i];
